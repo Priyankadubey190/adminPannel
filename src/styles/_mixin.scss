@@ -1,14 +1,14 @@
-@mixin heading($spacing: "2px", $weight: "bold", $case: "uppercase") {
+@mixin heading($spacing: 2px, $weight: bold, $case: uppercase) {
   letter-spacing: $spacing;
   weight: $weight;
   text-transform: $uppercase;
 }
 
 @mixin flex(
-  $dir: "row",
-  $justifyContent: "center",
-  $alignItems: "center",
-  $gap: "1rem"
+  $dir: row,
+  $justifyContent: center,
+  $alignItems: center,
+  $gap: 1rem
 ) {
   display: flex;
   flex-direction: $dir;
@@ -17,18 +17,13 @@
   gap: $gap;
 }
 
-@mixin grid($col: "1fr", $row: "unset", $gap: "1rem") {
+@mixin grid($col: 1fr, $row: unset, $gap: 1rem) {
   display: grid;
   grid-template-columns: $col;
   grid-template-rows: $row;
   gap: $gap;
 }
-@mixin inputStyle(
-  $w: "100%",
-  $p: "1rem",
-  $bgColor: "inherit",
-  $border: "none"
-) {
+@mixin inputStyle($w: 100%, $p: 1rem, $bgColor: inherit, $border: none) {
   padding: $p;
   border: $border;
   background-color: $bgColor;
@@ -43,7 +38,7 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin square($s: "1rem") {
+@mixin square($s: 1rem) {
   height: $s;
   width: $s;
 }
