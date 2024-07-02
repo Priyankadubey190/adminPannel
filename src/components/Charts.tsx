@@ -100,11 +100,7 @@ const BarChart = ({
     ],
   };
 
-  return (
-    <div>
-      <Bar width={horizontal ? "200%" : ""} options={options} data={data} />
-    </div>
-  );
+  return <Bar width={horizontal ? "200%" : ""} options={options} data={data} />;
 };
 
 interface DoughnutChartProps {
