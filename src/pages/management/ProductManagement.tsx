@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import AdminSidebar from "../../components/AdminSidebar";
 import img from "../../assets/images/macbookImage.webp";
 

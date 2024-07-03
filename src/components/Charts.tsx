@@ -8,7 +8,7 @@ import {
   Title,
   Tooltip,
   Chart,
-  DoughnutController,
+  // DoughnutController,
   ArcElement,
   PointElement,
   LineElement,
