@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Loader } from "./components/Loader";
 
 const DashBoard = lazy(() => import("./pages/DashBoard"));
@@ -29,6 +29,27 @@ function App() {
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
         <Routes>
+          <Route
+            path="/"
+            element={
+              <Link
+                to="/admin/dashboard"
+                style={{
+                  color: "#fff",
+                  backgroundColor: "blue",
+                  padding: "15px 20px",
+                  borderRadius: "10px",
+                  height: "60px",
+                  marginTop: "50px",
+                  marginLeft: "40%",
+                  width: "100%",
+                }}
+              >
+                Visit Dashboard
+              </Link>
+            }
+          />
+
           <Route path="/admin/dashboard" element={<DashBoard />} />
           <Route path="/admin/customers" element={<Customers />} />
           <Route path="/admin/products" element={<Products />} />
